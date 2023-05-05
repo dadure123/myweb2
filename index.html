@@ -6,6 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .button-wrapper {
+            position: relative;
+            height: 200px;
+        }
+        .home-button {
+            position: absolute;
+            top: 200%;
+            left: 95%;
+            transform: translate(-50%, 0);
+            width: 100px;
+            height: 50px;
+        }
+        .button1 {
+            position: absolute;
+            top: 200%;
+            left: 88%;
+            transform: translate(-50%, 0);
+            width: 150px;
+            height: 50px;
+        }
+    </style>
 </head>
 
 <body style="background-color: skyblue;">
@@ -14,8 +36,15 @@
  src="https://www.nongsaro.go.kr/cms_contents/301/19716_MF_ATTACH_01.gif" />
  <p><font size="4">출처:농서로 </font></p>
  <p style="color: green;"><font size="5">온도:12~24도 빛:반양지/반음지/음지 물주기:배양토가 마르면 물주기</font></p>
- <button style="width: 150px; height: 50px; background-color: lightgreen;"><a href="https://dadure123.github.io/web3/"><font size="5">식물사전</a></button>
-    <button style="width: 100px; height: 50px; background-color: yellow;"><a href="https://dadure123.github.io/myweb/"><font size="5">home</font></a></button>
+ <div class="button-wrapper">
+ <button class="button1" style="background-color: lightgreen;"><a href="https://dadure123.github.io/web3/"><font size="5">식물사전</a></button>
+    <button class="home-button" style="background-color: yellow;"><a href="https://dadure123.github.io/myweb/"><font size="5">home</font></a></button>
+    <style>
+        a {
+            text-decoration: none; color: black;
+        }
+    </style>
+ </div>
 </body>
 
 </html>
